@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+const int mod=224737;
+long long produs=1;
+int main()
+{
+    int n,m;
+    std::cin>>m>>n;
+    for(int i=n-m+1;i<=n;i++)
+        produs=(produs*i)%mod;
+    std::cout<<produs%mod;
+}
